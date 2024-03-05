@@ -1,0 +1,7 @@
+[Unit]
+Description=Update Metrics Service
+After=dnf-makecache.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/dnf-updates.sh
